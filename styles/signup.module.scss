@@ -1,0 +1,85 @@
+.signup {
+  margin: 80px 0px;
+
+  &_container {
+    width: 50%;
+    margin: 30px auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &_heading {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00547f;
+    text-align: center;
+  }
+
+  &_input {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 60%;
+    label {
+      text-align: left;
+      margin: 5px 2px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    input {
+      width: 100%;
+      border: 2px solid #dadce0;
+      height: 35px;
+      border-radius: 5px;
+      padding: 10px;
+
+      &:focus {
+        border-color: #00547f;
+      }
+    }
+    &_error {
+      color: #c0392b;
+      height: 10px;
+      margin-top: 2px;
+      font-size: 14px;
+    }
+  }
+  &_err {
+    border-color: #c0392b !important;
+  }
+
+  &_button {
+    text-align: right;
+    width: 60%;
+    margin: 0 auto;
+  }
+  &_send {
+    margin-top: 35px;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #00547f;
+    background-color: #00547f;
+    color: #fff;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  a {
+    color: #0077b3;
+    text-decoration: none;
+    margin-left: 5px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

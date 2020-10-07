@@ -1,0 +1,175 @@
+.home {
+  margin: 100px 0;
+
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &_containers {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  &_main {
+    margin-top: 30px;
+
+    &_heading {
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  &_q {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-top: 30px;
+    &_poster {
+      color: #787878;
+      font-size: 15px;
+      margin-top: 10px;
+      a {
+        text-decoration: none;
+        color: #787878;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    span {
+      color: #767676;
+      margin-right: 10px;
+    }
+
+    &_sentence {
+      font-size: 25px;
+      text-decoration: none;
+      color: #00547f;
+      &:hover {
+        color: #333;
+        text-decoration: underline;
+      }
+    }
+
+    &_ans {
+      color: #767676;
+      margin-top: 20px;
+    }
+  }
+
+  &_side {
+    position: fixed;
+
+    &_trending {
+      margin-top: 60px;
+
+      &_h {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      &_q {
+        a {
+          color: #333;
+          text-decoration: none;
+          font-size: 18px;
+          margin-top: 20px;
+          color: #1d70c9;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &_clock {
+    margin: 0px auto;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff url("/clock.png");
+    background-size: cover;
+    border-radius: 30px;
+    border: 20px solid #fff;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1),
+      0 20px 20px rgba(0, 0, 0, 0.2), 0 0 40px rgba(225, 225, 225, 1);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #848484;
+      border-radius: 50%;
+      z-index: 10;
+      border: 2px solid #fff;
+    }
+
+    &_hour,
+    &_min,
+    &_sec {
+      position: absolute;
+    }
+
+    &_hour,
+    .hr {
+      width: 110px;
+      height: 110px;
+    }
+
+    &_min,
+    .mn {
+      width: 140px;
+      height: 140px;
+    }
+
+    &_sec,
+    .sec {
+      width: 160px;
+      height: 160px;
+    }
+
+    .hr,
+    .mn,
+    .sec {
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .hr::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 70px;
+      background: #848484;
+      z-index: 10;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .mn::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 85px;
+      background: #848484;
+      z-index: 11;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .sec::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 110px;
+      background: #ff6767;
+      z-index: 12;
+      border-radius: 6px 6px 0 0;
+    }
+  }
+}

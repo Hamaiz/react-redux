@@ -1,0 +1,67 @@
+.navbar {
+  background: #fff;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 100%;
+  }
+
+  &_logo {
+    grid-area: 1/1;
+    font-size: 35px;
+    font-weight: bold;
+    color: #00547f;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  &_search {
+    grid-area: 1/2;
+    margin: 0 auto;
+    align-self: center;
+    width: 80%;
+    position: relative;
+    input {
+      width: 100%;
+      border: 2px solid #757575;
+      border-radius: 10px;
+      height: 40px;
+      padding: 10px;
+      color: #00547f;
+      &:focus {
+        border-color: #333;
+      }
+    }
+    &_icon {
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      svg {
+        fill: #00547f;
+      }
+    }
+  }
+
+  &_nav {
+    grid-area: 1/3;
+    align-self: center;
+    justify-self: center;
+    a {
+      margin-right: 20px;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      &:hover {
+        color: #767676;
+        text-decoration: underline;
+      }
+    }
+  }
+}

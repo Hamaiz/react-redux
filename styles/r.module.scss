@@ -1,0 +1,50 @@
+.r {
+  margin: 100px 0;
+
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  &_containers {
+    width: 80%;
+    margin-left: auto;
+  }
+
+  &_main {
+    margin-top: 30px;
+
+    &_heading {
+      font-size: 20px;
+      span {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &_side {
+    position: fixed;
+
+    &_trending {
+      margin-top: 60px;
+
+      &_h {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      &_q {
+        a {
+          color: #333;
+          text-decoration: none;
+          font-size: 18px;
+          margin-top: 20px;
+          color: #1d70c9;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

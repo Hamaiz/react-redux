@@ -1,0 +1,100 @@
+.q {
+  margin-top: 100px;
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &_question {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &_main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &_date {
+    color: #787878;
+  }
+  &_votes {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &_thumbs {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    &_up {
+      border: 3px solid #babdc4;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #f0f2f5;
+      margin: 0 10px;
+      transition: 0.2s ease;
+      &:hover {
+        background: #fff;
+        border-width: 4px;
+      }
+    }
+  }
+
+  &_poster {
+    color: #787878;
+    a {
+      color: #00547f;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_side {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &_answer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    &_a {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    &_ap {
+      color: #787878;
+      a {
+        color: #00547f;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: #333;
+        }
+      }
+    }
+  }
+}
